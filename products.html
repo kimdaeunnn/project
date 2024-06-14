@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 목록</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+     /* 스타일링 */
+     .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.7); /* 반투명 배경색 */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html">D A L I Y</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">홈</a></li>
+            <li class="dropdown">
+                <a href="#">상품 보기</a>
+                <div class="dropdown-content">
+                    <a href="#">TOP</a>
+                    <a href="#">BOTTOM</a>
+                    <a href="#">SKIRT</a>
+                    <a href="#">PANTS</a>
+                    <a href="#">ACC</a>
+                    <!-- 필요한 만큼 카테고리를 추가할 수 있습니다. -->
+                </div>
+            </li>
+            <li><a href="about.html">소개</a></li>
+            <li><a href="contact.html">문의하기</a></li>
+            <li><a href="signup.html">회원가입</a></li>
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="reviews.html">고객 리뷰</a></li>
+        </ul>
+    </nav>
+    <div class="search">
+        <input type="text" placeholder="검색">
+        <button>검색</button>
+    </div>
+</header>
+
+<div class="container">
+    <h1>상품 목록</h1>
+    <!-- 여기에 상품 목록을 나타내는 코드를 추가하세요 -->
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
+
+
+
