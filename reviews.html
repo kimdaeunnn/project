@@ -1,46 +1,43 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>고객 리뷰</title>
+    <title>DALIY - Reviews</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html">D A L I Y </a>
-        </div>
+        <h1>D A L I Y</h1>
         <nav>
             <ul>
-                <li><a href="index.html">홈</a></li>
-                <li><a href="products.html">상품 보기</a></li>
-                <li><a href="about.html">소개</a></li>
-                <li><a href="contact.html">문의하기</a></li>
-                <li><a href="signup.html">회원가입</a></li>
-                <li><a href="login.html">로그인</a></li>
-                <li><a href="reviews.html">review</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
             </ul>
         </nav>
-        <div class="search">
-            <input type="text" placeholder="검색">
-            <button>검색</button>
-        </div>
     </header>
-    <div class="container">
-        <h1>고객 리뷰</h1>
-        <form class="review-form">
-            <label for="name">이름</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">이메일</label>
-            <input type="email" id="email" name="email" required>
-            <label for="review">리뷰</label>
-            <textarea id="review" name="review" rows="6" required></textarea>
-            <button type="submit">리뷰 남기기</button>
+    
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <form id="review-form">
+            <label for="review-username">Username:</label>
+            <input type="text" id="review-username" name="username" required>
+            <label for="review-text">Review:</label>
+            <textarea id="review-text" name="review" required></textarea>
+            <button type="submit">Submit Review</button>
         </form>
-              
-            </div>        
-    </div>
-    <script src="scripts.js"></script>
+        <div id="review-list">
+            <!-- JavaScript will populate this section with reviews -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DALIY. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
